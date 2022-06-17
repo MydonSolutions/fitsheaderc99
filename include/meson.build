@@ -1,0 +1,1 @@
+install_subdir('fitsheader', install_dir : get_option('includedir'))
