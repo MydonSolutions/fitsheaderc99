@@ -1,12 +1,17 @@
 project('fitsheader', 'c',
-  version: '0.0',
+  version: '1.0',
 )
+
+cc = meson.get_compiler('c')
+m_dep = cc.find_library('m', required : true)
 
 src_lst = []
 inc_lst = [
 	include_directories('include'),
 ]
-dep_lst = []
+dep_lst = [
+  m_dep,
+]
 
 subdir('include')
 subdir('src')
