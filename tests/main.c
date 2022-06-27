@@ -14,7 +14,7 @@ int main(){
   "                                        ";
   int number;
   char string[71];
-  hgets(mock_buffer, "STRING", sizeof(string), &string);
+  hgets(mock_buffer, "STRING", sizeof(string), string);
   hgeti4(mock_buffer, "NUMBER", &number);
   printf("STRING: %s\n", string);
   printf("NUMBER: %d\n", number);
@@ -22,7 +22,7 @@ int main(){
   hputs(mock_buffer, "STRING", "FITSIO HEADER LIBRARY");
   hputi4(mock_buffer, "NUMBER", number/2);
 
-  hgets(mock_buffer, "STRING", sizeof(string), &string);
+  hgets(mock_buffer, "STRING", sizeof(string), string);
   hgeti4(mock_buffer, "NUMBER", &number);
   printf("STRING: %s\n", string);
   printf("NUMBER: %d\n", number);

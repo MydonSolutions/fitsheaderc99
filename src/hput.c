@@ -768,7 +768,7 @@ hputcom (hstring,keyword,comment)
         /* If comment will not fit at all, return */
         if (c0 - v1 > 77)
             return (-1);
-        strncpy (c0, " / ",3);
+        strncpy (c0, " / ", 4);
         }
 
     /* Create new entry */
