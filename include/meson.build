@@ -1,1 +1,1 @@
-install_subdir('fitsheader', install_dir : get_option('includedir'))
+install_headers('fitsheaderc99.h', install_dir : get_option('includedir'))

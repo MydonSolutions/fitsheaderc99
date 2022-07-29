@@ -55,7 +55,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "fitsheader.h"
+#include "fitsheaderc99.h"
 
 //static int verbose=0;   /* Set to 1 to print error messages and other info */
 const static int verbose=0;/* Set to 1 to print error messages and other info */

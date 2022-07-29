@@ -1,5 +1,5 @@
 project('fitsheader', 'c',
-  version: '1.0',
+  version: '1.1',
 )
 
 cc = meson.get_compiler('c')
@@ -17,7 +17,7 @@ subdir('include')
 subdir('src')
 
 lib_fitsheader = library(
-  'fitsheader',
+  'fitsheaderc99',
   src_lst,
   include_directories: inc_lst,
   dependencies: dep_lst,
@@ -28,6 +28,12 @@ lib_fitsheader_dep = declare_dependency(
   include_directories: inc_lst,
   dependencies: dep_lst,
   link_with: lib_fitsheader,
+)
+
+pkg = import('pkgconfig')
+pkg.generate(
+  lib_fitsheader,
+  libraries: dep_lst,
 )
 
 subdir('tests')

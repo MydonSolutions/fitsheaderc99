@@ -60,7 +60,7 @@
 
 #include <string.h>             /* NULL, strlen, strstr, strcpy */
 #include <stdio.h>
-#include "fitsheader.h"   /* FITS header extraction subroutines */
+#include "fitsheaderc99.h"   /* FITS header extraction subroutines */
 #include <stdlib.h>
 #ifndef VMS
 #include <limits.h>

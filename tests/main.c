@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "fitsheader.h"
+#include "fitsheaderc99.h"
 
 int main(){
   char mock_buffer[] = 
