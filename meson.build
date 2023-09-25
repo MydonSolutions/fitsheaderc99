@@ -2,7 +2,6 @@ project('fitsheader', 'c',
   version: '1.1',
   default_options: [ 
     'buildtype=release',
-    'werror=true'
   ]
 )
 
